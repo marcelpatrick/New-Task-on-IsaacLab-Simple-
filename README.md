@@ -28,7 +28,7 @@ Install IsaacSim and IsaacLab: https://github.com/marcelpatrick/IsaacSim-IsaacLa
   - `experiment_name = "my_ant" # << RENAME`
   - rl_games will automatically generate a timestamp-based name for each run.
 
-6. Customize **TRAINING** Parameters
+1. Customize **TRAINING** Parameters
   - The Config file will depend on the library you are using.
   - For rl_games:
     - File: `rl_games_ppo_cfg.yaml`.
@@ -37,17 +37,17 @@ Install IsaacSim and IsaacLab: https://github.com/marcelpatrick/IsaacSim-IsaacLa
     - file: `rsl_rl_ppo_cfg.py`
     - Path: `C:\Users\[YOUR USER]\MyIsaacLabProject\source\MyIsaacLabProject\MyIsaacLabProject\tasks\manager_based\ant\agents\rsl_rl_ppo_cfg.py`
 
-7. Customize **REWARD** Parameters
+1. Customize **REWARD** Parameters
   - File: `ant_env_cfg.py`
   - Path: `"C:\Users\[YOUR USER]\MyIsaacLabProject\source\MyIsaacLabProject\MyIsaacLabProject\tasks\manager_based\ant\ant_env_cfg.py"`
 
-8. RUN:
+1. RUN:
   - In your Anaconda Prompt terminal, at the project root `(env_isaaclab) C:\Users\[YOUR USER]\MyIsaacLabProject>` or inside the VSCode project, run: `python scripts/[LIBRARY]/train.py --task=[YOUR TASK NAME]`. eg:
     - For rsl_rl: run: `python scripts/rsl_rl/train.py --task=Template-My-Isaac-Ant-v0`
     - For rl_games: run: `python scripts/rl_games/train.py --task=Template-My-Isaac-Ant-v0`
 Exit with `Ctrl C`
 
-9. Read results
+1. Read results
  - For rsl_rl:
    - check results in the CLI output  
  - For rl_games:
