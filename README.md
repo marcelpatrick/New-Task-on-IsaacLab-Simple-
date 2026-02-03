@@ -9,6 +9,8 @@ Install IsaacSim and IsaacLab: https://github.com/marcelpatrick/IsaacSim-IsaacLa
 1. Create an External Project: `https://github.com/marcelpatrick/create-a-new-external-isaaclab-project/blob/main/README.md`
    - In this example I created a project named `MyIsaacLabProject`
      
+1. Check which library the project was generated with (eg. rsl_rl, rl_games). Check the Script folder in `C:\Users\[YOUR USER]\MyIsaacLabProject5\scripts` and look for the library folders. The library will determine which files to change and how to run the task.
+
 1. Rename folder from MyIsaacLabProject to Cartpole
    - Path: `C:\Users\[YOUR USER]\MyIsaacLabProject\source\MyIsaacLabProject\MyIsaacLabProject\tasks\manager_based\MyIsaacLabProject`
      
@@ -43,9 +45,9 @@ Install IsaacSim and IsaacLab: https://github.com/marcelpatrick/IsaacSim-IsaacLa
 
 8. RUN:
   - In your Anaconda Prompt terminal, at the project root `(env_isaaclab) C:\Users\[YOUR USER]\MyIsaacLabProject>` or inside the VSCode project, run: `python scripts/[LIBRARY]/train.py --task=[YOUR TASK NAME]`. eg:
-    - For rsl_rl: run: `python scripts/rsl_rl/train.py --task=Template-My-Isaac-Ant-v0`
-    - For rl_games: run: `python scripts/rl_games/train.py --task=Template-My-Isaac-Ant-v0`
-Exit with `Ctrl C`
+    - For rsl_rl: run: `python scripts/rsl_rl/train.py --task=Template-My-Isaac-Ant-v0` (make sure you have the rsl_rl library in your Scripts folder)
+    - For rl_games: run: `python scripts/rl_games/train.py --task=Template-My-Isaac-Ant-v0` (make sure you have the rl_games library folder in your Scripts folder)
+- Exit with `Ctrl C`
 
 9. Read results
  - For rsl_rl:
