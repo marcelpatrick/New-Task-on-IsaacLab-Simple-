@@ -21,7 +21,7 @@ Install IsaacSim and IsaacLab: https://github.com/marcelpatrick/IsaacSim-IsaacLa
    - In your external project, find file: Path: `"C:\Users\[YOUR USER]\MyIsaacLabProject\source\MyIsaacLabProject\MyIsaacLabProject\tasks\manager_based\ant\__init__.py"`
    - Rename project's name in id -> Your project's name must contain the "Template-" prefix otherwise it will not register on Gymnasium and you will not be able to run it with your custom parameters. 
    - `id="Template-My-Isaac-Ant-v0",      # << RENAME`
-     
+
 1. Rename Experiment (if running on rsl_rl)
   - If using the rsl_rl library to run this task, change the experiment name in the rsl_rl config file:
   - Path: `"C:\Users\[YOUR USER]\MyIsaacLabProject5\source\MyIsaacLabProject5\MyIsaacLabProject5\tasks\manager_based\ant\agents\rsl_rl_ppo_cfg.py"`
@@ -36,11 +36,11 @@ Install IsaacSim and IsaacLab: https://github.com/marcelpatrick/IsaacSim-IsaacLa
   - For rsl_rl 
     - file: `rsl_rl_ppo_cfg.py`
     - Path: `C:\Users\[YOUR USER]\MyIsaacLabProject\source\MyIsaacLabProject\MyIsaacLabProject\tasks\manager_based\ant\agents\rsl_rl_ppo_cfg.py`
-      
+
 1. Customize **REWARD** Parameters
   - File: `ant_env_cfg.py`
   - Path: `"C:\Users\[YOUR USER]\MyIsaacLabProject\source\MyIsaacLabProject\MyIsaacLabProject\tasks\manager_based\ant\ant_env_cfg.py"`
-    
+
 1. RUN:
   - In your Anaconda Prompt terminal, at the project root `(env_isaaclab) C:\Users\[YOUR USER]\MyIsaacLabProject>` or inside the VSCode project, run: `python scripts/[LIBRARY]/train.py --task=[YOUR TASK NAME]`. eg:
     - For rsl_rl: run: `python scripts/rsl_rl/train.py --task=Template-My-Isaac-Ant-v0`
