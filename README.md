@@ -30,7 +30,7 @@ Install IsaacSim and IsaacLab: https://github.com/marcelpatrick/IsaacSim-IsaacLa
   - `experiment_name = "my_ant" # << RENAME`
   - rl_games will automatically generate a timestamp-based name for each run.
 
-6. Customize **TRAINING** Parameters
+6. Customize **TRAINING** Parameters: **ppo_cfg**
   - The Config file will depend on the library you are using.
   - For rl_games:
     - File: `rl_games_ppo_cfg.yaml`.
@@ -39,7 +39,7 @@ Install IsaacSim and IsaacLab: https://github.com/marcelpatrick/IsaacSim-IsaacLa
     - file: `rsl_rl_ppo_cfg.py`
     - Path: `C:\Users\[YOUR USER]\MyIsaacLabProject\source\MyIsaacLabProject\MyIsaacLabProject\tasks\manager_based\ant\agents\rsl_rl_ppo_cfg.py`
 
-7. Customize **REWARD** Parameters
+7. Customize **REWARD** Parameters: **env_cfg**
   - File: `ant_env_cfg.py`
   - Path: `"C:\Users\[YOUR USER]\MyIsaacLabProject\source\MyIsaacLabProject\MyIsaacLabProject\tasks\manager_based\ant\ant_env_cfg.py"`
 
