@@ -9,7 +9,7 @@ Install IsaacSim and IsaacLab: https://github.com/marcelpatrick/IsaacSim-IsaacLa
 1. Create an External Project: `https://github.com/marcelpatrick/create-a-new-external-isaaclab-project/blob/main/README.md`
    - In this example I created a project named `MyIsaacLabProject`
      
-1. Check which library the project was generated with (eg. rsl_rl, rl_games). Check the Script folder in `C:\Users\[YOUR USER]\MyIsaacLabProject5\scripts` and look for the library folders. The library will determine which files to change and how to run the task.
+1. Check which library the project was generated with (eg. rsl_rl, rl_games). Check the Script folder in `C:\Users\[YOUR USER]\MyIsaacLabProject\scripts` and look for the library folders. The library will determine which files to change and how to run the task.
 
 1. Rename folder from MyIsaacLabProject to Cartpole
    - Path: `C:\Users\[YOUR USER]\MyIsaacLabProject\source\MyIsaacLabProject\MyIsaacLabProject\tasks\manager_based\MyIsaacLabProject`
@@ -17,7 +17,7 @@ Install IsaacSim and IsaacLab: https://github.com/marcelpatrick/IsaacSim-IsaacLa
 1. Copy the new task folder from the original [IsaacLab](https://github.com/isaac-sim/IsaacLab) project to your project.
    - In this example we are copying the Ant task: `Isaac-Ant-v0`
    - Origin Path: `"C:\Users\[YOUR USER]\IsaacLab\source\isaaclab_tasks\isaaclab_tasks\manager_based\classic\ant"`
-   - Destination Path: `C:\Users\[YOUR USER]\MyIsaacLabProject5\source\MyIsaacLabProject5\MyIsaacLabProject5\tasks\manager_based\ant`
+   - Destination Path: `C:\Users\[YOUR USER]\MyIsaacLabProject\source\MyIsaacLabProject\MyIsaacLabProject\tasks\manager_based\ant`
      
 1. Rename Project
    - In your external project, find file: Path: `"C:\Users\[YOUR USER]\MyIsaacLabProject\source\MyIsaacLabProject\MyIsaacLabProject\tasks\manager_based\ant\__init__.py"`
@@ -26,7 +26,7 @@ Install IsaacSim and IsaacLab: https://github.com/marcelpatrick/IsaacSim-IsaacLa
 
 1. Rename Experiment (if running on rsl_rl)
   - If using the rsl_rl library to run this task, change the experiment name in the rsl_rl config file:
-  - Path: `"C:\Users\[YOUR USER]\MyIsaacLabProject5\source\MyIsaacLabProject5\MyIsaacLabProject5\tasks\manager_based\ant\agents\rsl_rl_ppo_cfg.py"`
+  - Path: `"C:\Users\[YOUR USER]\MyIsaacLabProject\source\MyIsaacLabProject\MyIsaacLabProject\tasks\manager_based\ant\agents\rsl_rl_ppo_cfg.py"`
   - `experiment_name = "my_ant" # << RENAME`
   - rl_games will automatically generate a timestamp-based name for each run.
 
